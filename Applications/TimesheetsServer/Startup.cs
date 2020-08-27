@@ -66,6 +66,7 @@ namespace TimesheetsServer
                 };
 
                var logger = sp.GetService<ILogger<ProjectClient>>();
+               var contextAccessor = sp.GetService<IHttpContextAccessor>();
                 return new ProjectClient(
                     httpClient, logger,
                     () => contextAccessor.HttpContext.GetTokenAsync("access_token")

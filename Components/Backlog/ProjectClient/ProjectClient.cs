@@ -6,7 +6,7 @@ using System.Runtime.Serialization.Json;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 
-namespace Allocations.ProjectClient
+namespace Backlog.ProjectClient
 {
     public class ProjectClient : IProjectClient
     {
